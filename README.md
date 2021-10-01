@@ -14,6 +14,22 @@
 
 ### 물리
 - 힘과 운동
+> AddForce 함수가 있다 addForce함수는 다음과 같다  
+`Rigidbody2D.AddForce(힘 작용 방향, ForceMode2D.Impulse / ForceMode2D.Force);`  
+forceMode란 힘을 가하는 방식에 대해 이야기 하려고한다  
+`ForceMode.Force`는 짧은 시간에 발생하는 운동량 변화의 크기를 나타내며  
+주로 바람이나 자기력처럼 연속적으로 주어지는 힘을 나타내는 데 이용 된다.  
+`ForceMode.Impulse`는 충격량을 리지드바디에 주는 모드로 힘의 크기와 주는 시간을 곱한 수치다.  
+주로 타격이나 폭팔처럼 순간적으로 힘을 나타내는 데 이용된다.  
+
+> f = ma 라는 공식을 가지고 있으며 몇가지 공식을 정리하자면  
+등가속도운동에서의 공식은 다음과 같다  
+`v = v0 + at`, `v = v0 * t + at^2 / 2`, `2as = v^2 - v0^2`  
+`at = Δv`라는 식을 통해 다음과 같이도 나타낼 수 있다. `v = v0 * t + Δv * t`  
+
+> I 는 충격량을 나타내며, Impulse라고 한다  
+이때 `I = `
+  
 - 마찰력
 > 마찰력은 경사면에서 물체가 내려갈 때에 영향을 준다 이때 영향을 미치는 힘은 다음과 같다  
 ![dd](https://user-images.githubusercontent.com/58582985/135465058-41df773b-7410-448b-8e5d-86e988766142.gif)  
@@ -30,15 +46,15 @@ void Start()
     rb2D = GetComponent<Rigidbody2D>();
     boxCollider2D = GetComponent<BoxCollider2D>();
 
-    mass = rb2D.mass;                          //질량(m)
-    gravity = 9.87f * rb2D.gravityScale;       //중력(g) - 기본값 9.87f에 rb2D.gravityScale을 곱해준다
+    mass = rb2D.mass;                                       //질량(m)
+    gravity = 9.87f * rb2D.gravityScale;                    //중력(g) - 기본값 9.87f에 rb2D.gravityScale을 곱해준다
 }
 
 
 
 private void OnCollisionEnter2D(Collision2D collision)
 {
-    friction = Mathf.Min(collision.collider.GetComponent<BoxCollider2D>().friction, boxCollider2D.friction);  
+    friction = Mathf.Min(collision.collider.GetComponent<BoxCollider2D>().friction, boxCollider2D.friction);                
     //2D Friction은 두 오브젝트의 최솟값을 이용한다
 
     float tmp = collision.collider.transform.rotation.eulerAngles.z;                                                        
