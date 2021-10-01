@@ -21,7 +21,7 @@ public class cube : MonoBehaviour
         boxCollider2D = GetComponent<BoxCollider2D>();
 
         mass = rb2D.mass;
-        gravity = 9.87f;
+        gravity = 9.87f * rb2D.gravityScale;
     }
 
 
@@ -37,6 +37,7 @@ public class cube : MonoBehaviour
         if(collision.collider.tag == "item")
         {
             boxCollider2D.sharedMaterial = lowFriction;
+            //rb2D.sharedMaterial = lowFriction;
         }
         else
         {
@@ -55,7 +56,8 @@ public class cube : MonoBehaviour
         }
 
 
-        
-
     }
 }
+
+
+

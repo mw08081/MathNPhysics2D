@@ -343,6 +343,10 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/Scenes/FrictionalForce/cube.cs"
+"Assets/Scenes/ResistanceForce/addForceDrag.cs"
+"Assets/Scenes/ResistanceForce/addForceSimulator.cs"
+"Assets/Scenes/ResistanceForce/DragSimulation.cs"
+"Assets/Scenes/ResistanceForce/justGoRight.cs"
 -langversion:8.0
 
 /deterministic
