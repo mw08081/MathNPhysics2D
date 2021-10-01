@@ -30,8 +30,8 @@ void Start()
     rb2D = GetComponent<Rigidbody2D>();
     boxCollider2D = GetComponent<BoxCollider2D>();
 
-    mass = rb2D.mass;                                       //질량(m)
-    gravity = 9.87f * rb2D.gravityScale;                    //중력(g) - 기본값 9.87f에 rb2D.gravityScale을 곱해준다
+    mass = rb2D.mass;                          //질량(m)
+    gravity = 9.87f * rb2D.gravityScale;       //중력(g) - 기본값 9.87f에 rb2D.gravityScale을 곱해준다
 }
 
 
