@@ -68,4 +68,15 @@ boxCollider2D.sharedMaterial = lowFriction;
 > 유니티에서는 저항력을 단순하게 다음과 같이 나타낸다  
 `ν = ν * (1 - D * Δt)`  
 따라서 유니티에서 기본적으로 지원하는 drag속성값을 사용하지 않더라도  
-물체의 velocity값에 유니티 유체저항력을 적용시켜주면 Rigidbody2D의 drag속성과 동일하게 작용할 것이다.
+물체의 velocity값에 유니티 유체저항력을 적용시켜주면 Rigidbody2D의 drag속성과 동일하게 작용할 것이다.  
+![untiyDrag C#Drag](https://user-images.githubusercontent.com/58582985/135586069-42302e87-1def-4b60-aebd-06c7ba5e6649.gif)  
+위의 case가 rigidbody.drag = 0.5가 적용되었고, 아래의 case에는 rigidbody.drag = 0으로 설정하고 다음과 속도를 변화시켜준다  
+`rb2D.velocity = rb2D.velocity * (1 - 0.5f * Time.deltaTime);`  
+  
+> 추가적으로 문득 이런 생각이 들었다  
+drag속성에 의해 속도가 줄어드는 것을 외부의 힘에 의해 addForce(운동방향과 반대방향)로도 표현할 수 있지 않을까?  
+테스트 조건은 다음과 같다 `rigidbody.drag = 0;`  
+`e.GetComponent<Rigidbody2D>().AddForce(-e.transform.right * 0.1f, ForceMode2D.Force);`  
+이 때 e는 저항체이다  
+![addForceDrag](https://user-images.githubusercontent.com/58582985/135586978-fc276b4a-b72e-4aab-b479-2233bfd6ad20.gif)  
+ray의 범위에 들어오면 곧바로 외부의 힘이 가해지는데 따라서 해당 물체의 속도는 다음과 같이 변화한다![addForceDrag-velocity](https://user-images.githubusercontent.com/58582985/135587540-3185837d-f1dc-4a20-a777-4fdbb38eb13a.gif)
