@@ -38,7 +38,7 @@ void Start()
 
 private void OnCollisionEnter2D(Collision2D collision)
 {
-    friction = Mathf.Min(collision.collider.GetComponent<BoxCollider2D>().friction, boxCollider2D.friction);                
+    friction = Mathf.Min(collision.collider.GetComponent<BoxCollider2D>().friction, boxCollider2D.friction);  
     //2D Friction은 두 오브젝트의 최솟값을 이용한다
 
     float tmp = collision.collider.transform.rotation.eulerAngles.z;                                                        
