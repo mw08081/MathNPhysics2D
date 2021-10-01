@@ -28,7 +28,7 @@ forceMode란 힘을 가하는 방식에 대해 이야기 하려고한다
 `at = Δv`라는 식을 통해 다음과 같이도 나타낼 수 있다. `v = v0 * t + Δv * t`  
 
 > I 는 충격량을 나타내며, Impulse라고 한다  
-`I = F * Δt = mv - mv0 = Δp`, `F = (mv - mv0) / Δt = Δp / Δt = I / Δt`
+`F * Δt = mv - mv0 = Δp = I`, `F = (mv - mv0) / Δt = Δp / Δt = I / Δt`
 
   
 - 마찰력
