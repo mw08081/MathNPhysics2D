@@ -59,5 +59,13 @@ boxCollider2D.sharedMaterial = lowFriction;
 //여기서 boxCollider2D는 boxCollider2D = GetComponent<BoxCollider2D>();를 의미한다
 ```
   
-- 마찰력
-- 
+- 저항력
+> 저항력이란, 물체가 운동할 때 주변 유체의 의해 단면적 등에 비례하여 작용하는 힘이다  
+![캡처](https://user-images.githubusercontent.com/58582985/135581839-eeb68da4-44a7-4923-81ef-0323044b71bf.PNG)  
+따라서 물체가 한 번 정해진 속도로 이동할때, 지속적으로 저항력이 가해진다면 결국 물체는 정지하며  
+물체가 일정한 속도로 이동한다면, 지속적으로 저항력에 의해 속도가 감소하여 원하는 속도보다 못미치는 속도로 운동할 것이다  
+
+> 유니티에서는 저항력을 단순하게 다음과 같이 나타낸다  
+`ν = ν * (1 - D * Δt)`  
+따라서 유니티에서 기본적으로 지원하는 drag속성값을 사용하지 않더라도  
+물체의 velocity값에 유니티 유체저항력을 적용시켜주면 Rigidbody2D의 drag속성과 동일하게 작용할 것이다.
