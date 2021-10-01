@@ -58,3 +58,6 @@ public PhysicsMaterial2D lowFriction;
 boxCollider2D.sharedMaterial = lowFriction;               
 //여기서 boxCollider2D는 boxCollider2D = GetComponent<BoxCollider2D>();를 의미한다
 ```
+  
+- 마찰력
+- 
