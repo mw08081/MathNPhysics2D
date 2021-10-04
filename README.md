@@ -143,3 +143,6 @@ else if (crossVector.z < 0 && torque > 100)
 
 운동량은 다음과 같다 `p = m * v`  
 따라서 운동량은 m1 * v1 + m2 * v2 = m'1 * v'1 + m'2 * v'2  
+
++++ 탄성력 구현 코드  
+https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/ElasticForce
