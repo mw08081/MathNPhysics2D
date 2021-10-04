@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scenes\ElasticForce\Hit.cs" />
     <Compile Include="Assets\Scenes\ResistanceForce\addForceDrag.cs" />
     <Compile Include="Assets\Scenes\ResistanceForce\addForceSimulator.cs" />
+    <Compile Include="Assets\Scenes\ForceNMotion\shot.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
