@@ -59,9 +59,11 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scenes\TorqueForce\Player.cs" />
+    <Compile Include="Assets\Scenes\TorqueForce\Door.cs" />
     <Compile Include="Assets\Scenes\FrictionalForce\cube.cs" />
-    <Compile Include="Assets\Scenes\ResistanceForce\justGoRight.cs" />
     <Compile Include="Assets\Scenes\ResistanceForce\DragSimulation.cs" />
+    <Compile Include="Assets\Scenes\ResistanceForce\justGoRight.cs" />
     <Compile Include="Assets\Scenes\ResistanceForce\addForceDrag.cs" />
     <Compile Include="Assets\Scenes\ResistanceForce\addForceSimulator.cs" />
   </ItemGroup>

@@ -347,6 +347,8 @@
 "Assets/Scenes/ResistanceForce/addForceSimulator.cs"
 "Assets/Scenes/ResistanceForce/DragSimulation.cs"
 "Assets/Scenes/ResistanceForce/justGoRight.cs"
+"Assets/Scenes/TorqueForce/Door.cs"
+"Assets/Scenes/TorqueForce/Player.cs"
 -langversion:8.0
 
 /deterministic
