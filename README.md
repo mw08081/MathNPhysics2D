@@ -102,7 +102,7 @@ ray의 범위에 들어오면 곧바로 외부의 힘이 가해지는데 따라�
 ![addForceDrag-velocity](https://user-images.githubusercontent.com/58582985/135587540-3185837d-f1dc-4a20-a777-4fdbb38eb13a.gif)  
 
 
-+++ ResistanceForce 구현 코드
++++ ResistanceForce 구현 코드  
 https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/ResistanceForce
 
 
