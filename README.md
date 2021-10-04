@@ -8,14 +8,21 @@
 - 벡터의 내적
 - 벡터의 외적
 - 행렬
-- 포물선운동
-3. 물리
+2. 물리
 - 힘과 운동(Force & motion)
 - 마찰력(FrictionalForce)
 - 저항력(ResistanceForce)
 - 돌림힘(TorqueForce)
 - 탄성력(ElasticeForce)
 
+### 수학
+#### 1. 삼각함수
+
+#### 2. 벡터의 내적
+
+#### 3. 벡터의 외적
+
+#### 4. 행렬
 
 ### 물리
 #### 1. 힘과 운동(Force & Motion)
@@ -33,6 +40,30 @@ forceMode란 힘을 가하는 방식에 대해 이야기 하려고한다
 
 > I 는 충격량을 나타내며, Impulse라고 한다  
 `F * Δt = mv - mv0 = Δp = I`, `F = (mv - mv0) / Δt = Δp / Δt = I / Δt`
+
+포물선 운동은 대표적인 등가속도 운동이다  
+시작점을 A, 최고높이를 B, 다시 땅에 떨어진 지점을 C라고 하면 각 위치에서의 속도와 위치 좌표는 다음과 같다  
+
+`A.x : Vx = v * cosΘ, Sx = 0`  
+`Ay : Vy = v * sinΘ, Sy = 0`  
+
+`B.x : Vx = v * cosΘ, Sx = cosΘ * t`  
+`B.y : Vy = v * sinΘ - gt, Sy = v * sinΘ * t - gt^2 / 2` 
+
+B지점에서 Vx의 속도가 동일한 이유는 x방향으로의 가해지는 힘이 없으므로 속도는 변하지 않는다(`v = v0 + at`)  
+B지점에서 Vy, Sy를 구하는데 다음의 공식이 사용된다 ` v = v0 + at, s = v0 * t + at^2 / 2`  
+
+`C.x : Vx = v * cosΘ, Sx = v * cosΘ * 2t`  
+`C.y : Vy = v * sinΘ - 2gt = -v * sinΘ Sy = v * sinΘ * t - g2(t^2) / 2 = 0`  
+C지점에서의 Vy, Sy의 식을 정리하는데는 다음의 정의가 들어간다. B지점에서 `Vy = v * sinΘ - gt = 0` 이므로 `t = v * sinΘ / g`을 대입하면 식이 정리된다
+![포물선운동](https://user-images.githubusercontent.com/58582985/135850506-d8ec3189-e7b8-443a-9aba-85e9f422fb7e.jpg)
+
+이동거리와 최대높이에 대한 식을 `t = v * sinΘ / g`통해 정리하면 다음과 같다  
+`Sy = (v * sinΘ)^2 / 2g`  
+`Sx = v^2 * sin2Θ / g`  
+
++++ 힘과 운동에서의 포물선 운동 구현 코드
+
 
   
 #### 2. 마찰력(FrictionalForce)
