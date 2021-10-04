@@ -4,9 +4,12 @@
 
 ### 목차
 1. 수학
+- 삼각함수
+- 벡터의 내적
+- 벡터의 외적
+- 행렬
 - 포물선운동
-- 미정
-2. 물리
+3. 물리
 - 힘과 운동(Force & motion)
 - 마찰력(FrictionalForce)
 - 저항력(ResistanceForce)
