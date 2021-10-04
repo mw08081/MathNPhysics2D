@@ -10,6 +10,7 @@
 - 힘과 운동(Force & motion)
 - 마찰력(FrictionalForce)
 - 저항력(ResistanceForce)
+- 돌림힘(
 
 
 ### 물리
@@ -97,3 +98,27 @@ drag속성에 의해 속도가 줄어드는 것을 외부의 힘에 의해 addFo
 ![addForceDrag](https://user-images.githubusercontent.com/58582985/135586978-fc276b4a-b72e-4aab-b479-2233bfd6ad20.gif)  
 ray의 범위에 들어오면 곧바로 외부의 힘이 가해지는데 따라서 해당 물체의 속도는 다음과 같이 변화한다  
 ![addForceDrag-velocity](https://user-images.githubusercontent.com/58582985/135587540-3185837d-f1dc-4a20-a777-4fdbb38eb13a.gif)
+
+
+- 돌림힘(torqueForce)
+> 돌림힘이란, 물체를 돌리는데 필요한 힘이며 해당 힘은 다음과 같은 공식으로 구한다 `τ = r * F`  
+
+> 게임에서 특정 물체를 돌리려면 일정 이상의 돌림힘일 때, 돌아가도록 구현을 할 수 있을 듯하다.  
+하여 해당 물체는 돌림힘이 100 이상일 때 돌아갈 수 있도록 코드를 준비했다   
+```  
+if (crossVector.z > 0 && torque > 100)          //벡터의 외적을 통해 회전방향을 설정한다 시계/반시계
+{
+    isClock = false;                            //반시계 방향으로 회전한다
+    StartCoroutine("RotateDoor", torque / 4);
+}
+else if (crossVector.z < 0 && torque > 100)
+{
+    isClock = true;                             //시계방향으로 회전한다 
+    StartCoroutine("RotateDoor", torque / 4);
+}
+```  
+> 이때 torque는 `float torque = 1 * a * r.magnitude;`로 계산하며 아래는 r에 따른 돌림힘 debug와 그 결과이다  
+![torque(ture)](https://user-images.githubusercontent.com/58582985/135825184-0e87ec85-ecba-43ef-b0b8-04c0324f4141.PNG)  
+![torque(true)](https://user-images.githubusercontent.com/58582985/135825179-dcdd4c2d-c7e7-4142-bd82-271f37f4fa7e.gif)  
+![torque(false)](https://user-images.githubusercontent.com/58582985/135825175-8d246cc7-a85e-416e-8166-af91ce335a89.PNG)  
+![torque(false)](https://user-images.githubusercontent.com/58582985/135825178-8408657a-d65e-4f5f-b16d-c5e89f1adf64.gif)  
