@@ -342,6 +342,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
+"Assets/Scenes/ElasticForce/Hit.cs"
 "Assets/Scenes/FrictionalForce/cube.cs"
 "Assets/Scenes/ResistanceForce/addForceDrag.cs"
 "Assets/Scenes/ResistanceForce/addForceSimulator.cs"

@@ -42,6 +42,8 @@ public class Door : MonoBehaviour
             isClock = true;
             StartCoroutine("RotateDoor", torque / 4);
         }
+
+        
     }
 
 
@@ -58,5 +60,6 @@ public class Door : MonoBehaviour
         }
             
     }
-}
 
+    
+}

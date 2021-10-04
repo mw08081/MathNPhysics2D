@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scenes\FrictionalForce\cube.cs" />
     <Compile Include="Assets\Scenes\ResistanceForce\DragSimulation.cs" />
     <Compile Include="Assets\Scenes\ResistanceForce\justGoRight.cs" />
+    <Compile Include="Assets\Scenes\ElasticForce\Hit.cs" />
     <Compile Include="Assets\Scenes\ResistanceForce\addForceDrag.cs" />
     <Compile Include="Assets\Scenes\ResistanceForce\addForceSimulator.cs" />
   </ItemGroup>
