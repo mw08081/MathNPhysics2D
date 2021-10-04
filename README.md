@@ -10,7 +10,8 @@
 - 힘과 운동(Force & motion)
 - 마찰력(FrictionalForce)
 - 저항력(ResistanceForce)
-- 돌림힘(
+- 돌림힘(TorqueForce)
+- 탄성력(ElasticeForce)
 
 
 ### 물리
@@ -135,7 +136,7 @@ else if (crossVector.z < 0 && torque > 100)
  +++ torqueForce 구현간의 난항  
  https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/TorqueForce#readme  
 
-#### 4. 탄성력(ElasticForce)
+#### 5. 탄성력(ElasticForce)
 탄성력이란 고체의 변형에 의하여 생기는 힘으로 처음의 상태로 되돌아가려는 성질 때문이다  
 충돌 탄성에서는 3가지 경우에 따라 두 물체사이에서의 운동량의 차이가 생긴다  
 다음은 위에서 부터 완전탄성/비탄성충돌/완전비탄성충돌에 대한 예시이다  
