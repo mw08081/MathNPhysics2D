@@ -100,7 +100,8 @@ drag속성에 의해 속도가 줄어드는 것을 외부의 힘에 의해 addFo
 ![addForceDrag](https://user-images.githubusercontent.com/58582985/135586978-fc276b4a-b72e-4aab-b479-2233bfd6ad20.gif)  
 ray의 범위에 들어오면 곧바로 외부의 힘이 가해지는데 따라서 해당 물체의 속도는 다음과 같이 변화한다  
 ![addForceDrag-velocity](https://user-images.githubusercontent.com/58582985/135587540-3185837d-f1dc-4a20-a777-4fdbb38eb13a.gif)  
-+++ ResistanceForce 구현 코드  
++++ ResistanceForce 구현 코드
+
 https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/ResistanceForce
 
 
