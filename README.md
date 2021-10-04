@@ -75,6 +75,8 @@ public PhysicsMaterial2D lowFriction;
 boxCollider2D.sharedMaterial = lowFriction;               
 //여기서 boxCollider2D는 boxCollider2D = GetComponent<BoxCollider2D>();를 의미한다
 ```
+  +++ FrictionalForce 구현 코드  
+  https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/FrictionalForce  
   
 - 저항력
 > 저항력이란, 물체가 운동할 때 주변 유체의 의해 단면적 등에 비례하여 작용하는 힘이다  
@@ -122,3 +124,9 @@ else if (crossVector.z < 0 && torque > 100)
 ![torque(true)](https://user-images.githubusercontent.com/58582985/135825179-dcdd4c2d-c7e7-4142-bd82-271f37f4fa7e.gif)  
 ![torque(false)](https://user-images.githubusercontent.com/58582985/135825175-8d246cc7-a85e-416e-8166-af91ce335a89.PNG)  
 ![torque(false)](https://user-images.githubusercontent.com/58582985/135825178-8408657a-d65e-4f5f-b16d-c5e89f1adf64.gif)  
+
+
+ +++ torqueForce 구현 코드  
+ https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/TorqueForce  
+ +++ torqueForce 구현간의 난항  
+ https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/TorqueForce#readme  
