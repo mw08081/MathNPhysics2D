@@ -14,7 +14,7 @@
 
 
 ### 물리
-#### 1. 힘과 운동
+#### 1. 힘과 운동(Force & Motion)
 AddForce 함수가 있다 addForce함수는 다음과 같다  
 `Rigidbody2D.AddForce(힘 작용 방향, ForceMode2D.Impulse / ForceMode2D.Force);`  
 forceMode란 힘을 가하는 방식에 대해 이야기 하려고한다  
@@ -31,7 +31,7 @@ forceMode란 힘을 가하는 방식에 대해 이야기 하려고한다
 `F * Δt = mv - mv0 = Δp = I`, `F = (mv - mv0) / Δt = Δp / Δt = I / Δt`
 
   
-#### 2. 마찰력
+#### 2. 마찰력(FrictionalForce)
 마찰력은 경사면에서 물체가 내려갈 때에 영향을 준다 이때 영향을 미치는 힘은 다음과 같다  
 ![dd](https://user-images.githubusercontent.com/58582985/135465058-41df773b-7410-448b-8e5d-86e988766142.gif)  
 물체가 움직이려면 내려가는 힘이 정지마찰력보다 커야하므로 `mg * sinθ > f = υ*N`이 성립해야한다  
@@ -74,7 +74,7 @@ boxCollider2D.sharedMaterial = lowFriction;
 +++ FrictionalForce 구현 코드  
 https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/FrictionalForce  
   
-#### 3. 저항력
+#### 3. 저항력(ResistanceForce)
 저항력이란, 물체가 운동할 때 주변 유체의 의해 단면적 등에 비례하여 작용하는 힘이다  
 ![캡처](https://user-images.githubusercontent.com/58582985/135581839-eeb68da4-44a7-4923-81ef-0323044b71bf.PNG)  
 따라서 물체가 한 번 정해진 속도로 이동할때, 지속적으로 저항력이 가해진다면 결국 물체는 정지하며  
@@ -134,3 +134,12 @@ else if (crossVector.z < 0 && torque > 100)
  https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/TorqueForce  
  +++ torqueForce 구현간의 난항  
  https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/TorqueForce#readme  
+
+#### 4. 탄성력(ElasticForce)
+탄성력이란 고체의 변형에 의하여 생기는 힘으로 처음의 상태로 되돌아가려는 성질 때문이다  
+충돌 탄성에서는 3가지 경우에 따라 두 물체사이에서의 운동량의 차이가 생긴다  
+다음은 위에서 부터 완전탄성/비탄성충돌/완전비탄성충돌에 대한 예시이다  
+![collisionSimul](https://user-images.githubusercontent.com/58582985/135846516-bd6a46b6-9b30-43e7-a8c2-f3d1361e5995.gif)
+
+운동량은 다음과 같다 `p = m * v`  
+따라서 운동량은 m1 * v1 + m2 * v2 = m'1 * v'1 + m'2 * v'2  
