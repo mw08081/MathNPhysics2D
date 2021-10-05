@@ -61,9 +61,12 @@ C지점에서의 Vy, Sy의 식을 정리하는데는 다음의 정의가 들어�
 이동거리와 최대높이에 대한 식을 `t = v * sinΘ / g`통해 정리하면 다음과 같다  
 `Sy = (v * sinΘ)^2 / 2g`  
 `Sx = v^2 * sin2Θ / g`  
+  
+![parabola](https://user-images.githubusercontent.com/58582985/135963584-1a75307c-44e7-499d-9743-cca827fc2568.gif)
+![캡처](https://user-images.githubusercontent.com/58582985/135963582-d281b70b-48d0-4809-8da4-3e33e3cd3737.PNG)
 
-+++ 힘과 운동에서의 포물선 운동 구현 코드
-
++++ 힘과 운동에서의 포물선 운동 구현 코드  
+https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/ForceNMotion
 
   
 #### 2. 마찰력(FrictionalForce)
