@@ -89,7 +89,9 @@ https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/Math/VectorDot
 
 2d에서 벡터의 외적을 통해 z값을 통해 두 오브젝트간의 위치관계를 알 수 있다  
 ![제목 없음](https://user-images.githubusercontent.com/58582985/136177873-82e83c52-7433-4f65-a5ee-8c758b605d09.png)  
-반대로 Player가 위에 있게된다면 z 값이 음수값이 되는 것이다
+반대로 Player가 위에 있게된다면 z 값이 음수값이 되는 것이다  
+
+![CrossProduct](https://user-images.githubusercontent.com/58582985/136171333-5f3f8ce7-4ef1-49cf-8373-b1f283d0e7a8.gif)  
 
 +++ 벡터의 외적 구현 코드  
   
