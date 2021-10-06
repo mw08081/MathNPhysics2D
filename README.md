@@ -129,10 +129,10 @@ Conversion을 연산한 결과와 에디터에서 직접 이동/회전/신축한
 ![캡처2](https://user-images.githubusercontent.com/58582985/136195114-7baef641-222f-43c0-abd1-06b72919296b.PNG)
 ![캡처](https://user-images.githubusercontent.com/58582985/136195243-0b0908a7-2f38-4af0-a62e-a76ba021f241.PNG)  
 
-+++ 행렬 구현 코드
-  
-+++ 행렬 구현 난항  
-  
++++ 행렬 구현 코드  
+https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/Math/Matrix  
++++ 계산된 행렬을 추출하여 scale, rotation, posion으로 assing 하는 방법(★★★★★)    
+https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/Math/Matrix#readme  
 
 ### 물리
 #### 1. 힘과 운동(Force & Motion)
