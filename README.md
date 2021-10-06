@@ -38,6 +38,46 @@ https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/Math/TriFunc
 https://ko.wikipedia.org/wiki/%EC%82%BC%EA%B0%81%ED%95%A8%EC%88%98_%ED%95%AD%EB%93%B1%EC%8B%9D  
 
 #### 2. 벡터의 내적
+벡터의 내적은 다음과 같이 계산한다  
+`a · b = |a||b| * cosΘ`  
+이때 벡터의 내적을 단위벡터를 통해 계산하면 |a|, |b|는 1이 된다  
+
+벡터의 내적은 이렇게 활용할 수 있다  
+![제목 없음](https://user-images.githubusercontent.com/58582985/136145884-5940d661-c200-44dc-8537-5fa7afa9d747.png)
+위 그림을 보면 Θ = 90이고 c,d벡터가 같은 평면에 있다고 가정했을 때, d벡터가 c벡터를 기준으로 90도 안에 있는지 확인하는데 활용할 수 있다  
+`Vector3.Dot(c, d)`는 단위벡터로 계산하면 cosβ가 된다  
+이때 cosβ가 cosΘ(= cos90)보다 크다면 d벡터가 c벡터를 기준으로 90도 안에 있게 된다  
+
+원리는 cosβ가 cosΘ보다 크다면 Θ보다 β가 작은 각도가 된다 (단 0 <= Θ <= 90, 0 <= β <= 90) + cos그래프 참고  
+
+벡터의 내적을 통해 다음과 같이 손전등으로 유령을 찾는 코드를 구현할 수 있다  
+이렇게 Gost가 있다고 했을 때, Gost는 미리 `setActive(false)`한다  
+![캡처](https://user-images.githubusercontent.com/58582985/136146533-43eaaf06-dbf3-40fb-8616-f9a2e74cf494.PNG)  
+
+기본적으로 손전등과 Gost의 거리가 5이하이고, 손전등에서의 60도 사이에 Gost가 있는지 내적을 통해 확인한다
+```
+for (int i = 0; i < gosts.Length; i++)
+{
+    Vector3 bVector = gosts[i].transform.position - transform.position;
+    if (((gosts[i].transform.position - transform.position).magnitude <= 5) && Vector3.Dot(transform.up, bVector.normalized) > Mathf.Cos(lightAngle * Mathf.Deg2Rad))
+        gosts[i].SetActive(true);
+    else
+        gosts[i].SetActive(false);
+}
+```
+![noDenugRay](https://user-images.githubusercontent.com/58582985/136146529-b0668063-1222-49e8-9884-22779c8b8791.gif)  
+
+다음코드를 통해 벡터 내적의 범위를 아래코드를 통해 그려볼 수도 있다  
+```
+for (float i = 90 - lightAngle; i < (90 + lightAngle); i++)
+    Debug.DrawRay(transform.position, new Vector3(Mathf.Cos(i * Mathf.Deg2Rad), Mathf.Sin(i * Mathf.Deg2Rad), 0) * 5, Color.yellow);
+```
+![drawDebug](https://user-images.githubusercontent.com/58582985/136148963-113c01aa-3134-4b81-835f-58dcc6439194.gif)  
+
++++ 벡터의 내적 구현 코드  
+  
+
+
 
 #### 3. 벡터의 외적
 
