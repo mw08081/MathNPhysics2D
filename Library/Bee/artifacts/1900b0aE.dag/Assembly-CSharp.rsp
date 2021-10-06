@@ -344,6 +344,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/Scenes/Math/TriFunc/bullet.cs"
 "Assets/Scenes/Math/TriFunc/Turret.cs"
+"Assets/Scenes/Math/VectorDotProduct/Gost.cs"
+"Assets/Scenes/Math/VectorDotProduct/Light.cs"
 "Assets/Scenes/Physics/ElasticForce/Hit.cs"
 "Assets/Scenes/Physics/ForceNMotion/shot.cs"
 "Assets/Scenes/Physics/FrictionalForce/cube.cs"

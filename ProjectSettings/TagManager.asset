@@ -7,6 +7,7 @@ TagManager:
   - item
   - wall
   - simulator
+  - gost
   layers:
   - Default
   - TransparentFX
