@@ -76,12 +76,14 @@ for (float i = 90 - lightAngle; i < (90 + lightAngle); i++)
 
 +++ 벡터의 내적 구현 코드  
 https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/Math/VectorDotProduct  
-+++ 벡터의 내적 구현 난항
-
-
-
++++ 벡터의 내적 구현 난항  
+https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/Math/VectorDotProduct  
 
 #### 3. 벡터의 외적
+
+
++++ 벡터의 외적 구현 코드  
+  
 
 #### 4. 행렬
 
