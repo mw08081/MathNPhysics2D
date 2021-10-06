@@ -17,7 +17,23 @@
 - 탄성력(ElasticeForce)
 
 ### 수학
-#### 1. 삼각함수
+#### 1. 삼각함수  
+삼각함수는 주기를 그리는 필수적인 요소이다 게임에서의 원형 등과 같은 패턴을 그려낼때도 자주 사용된다  
+![Sine_function001 svg](https://user-images.githubusercontent.com/58582985/136132474-6ae0a1f8-d400-42fe-86a5-ef01dbae0ccb.png)  
+
+삼각함수를 계산하는 방법은 다음과 같다  
+![M202104-136](https://user-images.githubusercontent.com/58582985/136132710-2aadb01e-ab3d-42c6-9130-770f61e130ce.png)  
+이 때, 빗변의 길이를 1로 계산하면 `sinΘ = a`,`cosΘ = b`가 되고  
+피타고라스의 정리에 의해 `a^2 + b^2 = sinΘ^2 + cosΘ^2 = 1^2`로도 정리된다
+
+![1404CC334DFE1F6F36](https://user-images.githubusercontent.com/58582985/136132480-cab1ebde-98f4-4ddf-842b-8a563b5ac79f.png)  
+이 c = 1인 상황을 이용해서, (x = cosΘ, y = sinΘ) 좌표로 원을 그릴 수 있다.  
+
+삼각함수를 이용해서 패턴을 그려낼 수 도있다.  
+![turret](https://user-images.githubusercontent.com/58582985/136133859-473a3ba9-210d-4807-96f6-6112831efe7c.gif)
+
++++ 삼각함수 패턴 그리기 구현 코드  
+https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/Math/TriFunc  
 
 #### 2. 벡터의 내적
 
