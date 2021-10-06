@@ -59,15 +59,17 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scenes\TorqueForce\Player.cs" />
-    <Compile Include="Assets\Scenes\TorqueForce\Door.cs" />
-    <Compile Include="Assets\Scenes\FrictionalForce\cube.cs" />
-    <Compile Include="Assets\Scenes\ResistanceForce\DragSimulation.cs" />
-    <Compile Include="Assets\Scenes\ResistanceForce\justGoRight.cs" />
-    <Compile Include="Assets\Scenes\ElasticForce\Hit.cs" />
-    <Compile Include="Assets\Scenes\ResistanceForce\addForceDrag.cs" />
-    <Compile Include="Assets\Scenes\ResistanceForce\addForceSimulator.cs" />
-    <Compile Include="Assets\Scenes\ForceNMotion\shot.cs" />
+    <Compile Include="Assets\Scenes\Physics\TorqueForce\Player.cs" />
+    <Compile Include="Assets\Scenes\Math\TriFunc\Turret.cs" />
+    <Compile Include="Assets\Scenes\Physics\TorqueForce\Door.cs" />
+    <Compile Include="Assets\Scenes\Physics\FrictionalForce\cube.cs" />
+    <Compile Include="Assets\Scenes\Physics\ResistanceForce\DragSimulation.cs" />
+    <Compile Include="Assets\Scenes\Physics\ResistanceForce\justGoRight.cs" />
+    <Compile Include="Assets\Scenes\Physics\ElasticForce\Hit.cs" />
+    <Compile Include="Assets\Scenes\Physics\ResistanceForce\addForceDrag.cs" />
+    <Compile Include="Assets\Scenes\Physics\ForceNMotion\shot.cs" />
+    <Compile Include="Assets\Scenes\Math\TriFunc\bullet.cs" />
+    <Compile Include="Assets\Scenes\Physics\ResistanceForce\addForceSimulator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
