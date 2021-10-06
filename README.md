@@ -97,6 +97,42 @@ https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/Math/VectorDot
 https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/Math/VectorCrossProduct  
 
 #### 4. 행렬
+행렬은 유니티에서의 Transform 정보를 행렬로 나타낼 수 있고 해당 하는 행렬의 이동, 회전, 크기에 대해서 쉽게 계산할 수 있다  
+
+행렬의 변환은 다음 사진을 참고해서 설명한다  
+![변환행렬의 곱](https://user-images.githubusercontent.com/58582985/136191729-c1f8a3b3-7f1b-406d-b7f6-96f9f824e16f.png)  
+이동할때에는 T행렬을 기존 동차좌표계에 곱해주고, 신축할때에는 S행렬을 기존 동차좌표계에 곱해준다. 
+마지막으로 회전을 할때에는 각각의 축에 맞게 Θ값을 대입해서 곱해주면 된다  
+예시를 하나 들어보자면, 3차원 좌표에 점 a(1, 0, 0)가 있을때 이 점을 z축을 기준으로 90도 회전한다면 해당 점의 위치가 어떻게 바뀌는지에 대한 예시이다  
+![z회전](https://user-images.githubusercontent.com/58582985/136193747-482deb8e-1979-4ff8-916e-a003f68595f7.png)
+
+행렬 변환을 하기위해 행렬을 곱하는 순서가 있다`TR(y -> x -> z)S`순서이다  
+따라서 RST순으로 곱하게 된다면 잘못된 값이 나오니 주의하자  
+
+그렇다면 유니티에서도 실제로 동일한 값이 나올지 연산을 통해 transform정보를 추출해보고, 직접 이동/회전/신축을 통한 object의 transform 정보도 보도록하자  
+
+다음의 tranform 정보를 가지고 있는 Object를  
+x축으로 2, y축으로 1만큼 이동하고  
+x축을 기준으로 45도, z축을 기준으로 45도 회전하고  
+x,y,z에 대해서 3배 신축해주려고 한다  
+![origin](https://user-images.githubusercontent.com/58582985/136195254-e3576946-af85-46a2-84f5-0b236b54d460.PNG)  
+```C#
+Matrix4x4 directConversionMatrix = transform.localToWorldMatrix;
+
+directConversionMatrix = Matrix4x4.Translate(tran) * Matrix4x4.Rotate(rota) * Matrix4x4.Scale(scale);
+// 또는 다음과 같이 연산해줄 수 있다
+directConversionMatrix = Matrix4x4.TRS(tran, rota, scale);
+```
+
+Conversion을 연산한 결과와 에디터에서 직접 이동/회전/신축한 object의 행렬값은 다음과 같았다  
+![afterConversion](https://user-images.githubusercontent.com/58582985/136195112-11ea38f7-5df5-41e0-aa4c-d43c59b9fa3a.PNG)
+![캡처2](https://user-images.githubusercontent.com/58582985/136195114-7baef641-222f-43c0-abd1-06b72919296b.PNG)
+![캡처](https://user-images.githubusercontent.com/58582985/136195243-0b0908a7-2f38-4af0-a62e-a76ba021f241.PNG)  
+
++++ 행렬 구현 코드
+  
++++ 행렬 구현 난항  
+  
 
 ### 물리
 #### 1. 힘과 운동(Force & Motion)
