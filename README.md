@@ -55,7 +55,7 @@ https://ko.wikipedia.org/wiki/%EC%82%BC%EA%B0%81%ED%95%A8%EC%88%98_%ED%95%AD%EB%
 ![캡처](https://user-images.githubusercontent.com/58582985/136146533-43eaaf06-dbf3-40fb-8616-f9a2e74cf494.PNG)  
 
 기본적으로 손전등과 Gost의 거리가 5이하이고, 손전등에서의 60도 사이에 Gost가 있는지 내적을 통해 확인한다
-```
+```C#
 for (int i = 0; i < gosts.Length; i++)
 {
     Vector3 bVector = gosts[i].transform.position - transform.position;
