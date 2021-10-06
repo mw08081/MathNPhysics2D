@@ -178,7 +178,7 @@ C지점에서의 Vy, Sy의 식을 정리하는데는 다음의 정의가 들어�
 ![캡처](https://user-images.githubusercontent.com/58582985/135963582-d281b70b-48d0-4809-8da4-3e33e3cd3737.PNG)
 
 +++ 힘과 운동에서의 포물선 운동 구현 코드  
-https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/ForceNMotion
+https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/Physics/ForceNMotion  
 
   
 #### 2. 마찰력(FrictionalForce)
@@ -222,7 +222,7 @@ boxCollider2D.sharedMaterial = lowFriction;
 //여기서 boxCollider2D는 boxCollider2D = GetComponent<BoxCollider2D>();를 의미한다
 ```  
 +++ FrictionalForce 구현 코드  
-https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/FrictionalForce  
+https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/Physics/FrictionalForce  
   
 #### 3. 저항력(ResistanceForce)
 저항력이란, 물체가 운동할 때 주변 유체의 의해 단면적 등에 비례하여 작용하는 힘이다  
@@ -249,7 +249,7 @@ ray의 범위에 들어오면 곧바로 외부의 힘이 가해지는데 따라�
 
 
 +++ ResistanceForce 구현 코드  
-https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/ResistanceForce
+https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/Physics/ResistanceForce  
 
 
 #### 4. 돌림힘(torqueForce)
@@ -281,7 +281,7 @@ else if (crossVector.z < 0 && torque > 100)
 ![torque(false)](https://user-images.githubusercontent.com/58582985/135825178-8408657a-d65e-4f5f-b16d-c5e89f1adf64.gif)  
 
  +++ torqueForce 구현 코드  
- https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/TorqueForce  
+ https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/Physics/TorqueForce  
  +++ torqueForce 구현간의 난항  
  https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/TorqueForce#readme  
 
@@ -295,4 +295,4 @@ else if (crossVector.z < 0 && torque > 100)
 따라서 운동량은 m1 * v1 + m2 * v2 = m'1 * v'1 + m'2 * v'2  
 
 +++ 탄성력 구현 코드  
-https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/ElasticForce
+https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/Physics/ElasticForce
