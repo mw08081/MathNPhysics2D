@@ -34,6 +34,8 @@
 
 +++ 삼각함수 패턴 그리기 구현 코드  
 https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/Math/TriFunc  
++++ 삼각함수 각도에 따른 항등식  
+https://ko.wikipedia.org/wiki/%EC%82%BC%EA%B0%81%ED%95%A8%EC%88%98_%ED%95%AD%EB%93%B1%EC%8B%9D  
 
 #### 2. 벡터의 내적
 
