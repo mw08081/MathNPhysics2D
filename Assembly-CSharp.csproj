@@ -61,7 +61,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scenes\Math\VectorDotProduct\Gost.cs" />
     <Compile Include="Assets\Scenes\Physics\TorqueForce\Player.cs" />
+    <Compile Include="Assets\Scenes\Math\VectorCrossProduct\MarioWall.cs" />
     <Compile Include="Assets\Scenes\Math\VectorDotProduct\Light.cs" />
+    <Compile Include="Assets\Scenes\Math\VectorCrossProduct\Wall.cs" />
     <Compile Include="Assets\Scenes\Math\TriFunc\Turret.cs" />
     <Compile Include="Assets\Scenes\Physics\TorqueForce\Door.cs" />
     <Compile Include="Assets\Scenes\Physics\FrictionalForce\cube.cs" />
@@ -71,6 +73,7 @@
     <Compile Include="Assets\Scenes\Physics\ResistanceForce\addForceDrag.cs" />
     <Compile Include="Assets\Scenes\Physics\ForceNMotion\shot.cs" />
     <Compile Include="Assets\Scenes\Math\TriFunc\bullet.cs" />
+    <Compile Include="Assets\Scenes\Math\VectorCrossProduct\User.cs" />
     <Compile Include="Assets\Scenes\Physics\ResistanceForce\addForceSimulator.cs" />
   </ItemGroup>
   <ItemGroup>

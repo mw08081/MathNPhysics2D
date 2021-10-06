@@ -8,6 +8,7 @@ TagManager:
   - wall
   - simulator
   - gost
+  - ground
   layers:
   - Default
   - TransparentFX
