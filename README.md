@@ -46,6 +46,8 @@ forceMode란 힘을 가하는 방식에 대해 이야기 하려고한다
 
 `A.x : Vx = v * cosΘ, Sx = 0`  
 `Ay : Vy = v * sinΘ, Sy = 0`  
+이때 곱해주는 v는 v0의 크기와 같다  
+따라서 `rb2D.AddForce(tranform.right * 10, ForceMode.Inpuluse);`로 쏘아올릴 경우 단위 백터 * 10 한 크기이므로 v = 10 이된다
 
 `B.x : Vx = v * cosΘ, Sx = cosΘ * t`  
 `B.y : Vy = v * sinΘ - gt, Sy = v * sinΘ * t - gt^2 / 2` 
