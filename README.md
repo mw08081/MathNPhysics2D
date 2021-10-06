@@ -43,7 +43,7 @@ https://ko.wikipedia.org/wiki/%EC%82%BC%EA%B0%81%ED%95%A8%EC%88%98_%ED%95%AD%EB%
 이때 벡터의 내적을 단위벡터를 통해 계산하면 |a|, |b|는 1이 된다  
 
 벡터의 내적은 이렇게 활용할 수 있다  
-![제목 없음](https://user-images.githubusercontent.com/58582985/136145884-5940d661-c200-44dc-8537-5fa7afa9d747.png)
+![제목 없음](https://user-images.githubusercontent.com/58582985/136145884-5940d661-c200-44dc-8537-5fa7afa9d747.png)  
 위 그림을 보면 Θ = 90이고 c,d벡터가 같은 평면에 있다고 가정했을 때, d벡터가 c벡터를 기준으로 90도 안에 있는지 확인하는데 활용할 수 있다  
 `Vector3.Dot(c, d)`는 단위벡터로 계산하면 cosβ가 된다  
 이때 cosβ가 cosΘ(= cos90)보다 크다면 d벡터가 c벡터를 기준으로 90도 안에 있게 된다  
