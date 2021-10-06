@@ -94,7 +94,7 @@ https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/Math/VectorDot
 ![CrossProduct](https://user-images.githubusercontent.com/58582985/136171333-5f3f8ce7-4ef1-49cf-8373-b1f283d0e7a8.gif)  
 
 +++ 벡터의 외적 구현 코드  
-  
+https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/Math/VectorCrossProduct  
 
 #### 4. 행렬
 
