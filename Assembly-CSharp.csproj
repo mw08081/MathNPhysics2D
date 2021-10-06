@@ -75,6 +75,8 @@
     <Compile Include="Assets\Scenes\Math\TriFunc\bullet.cs" />
     <Compile Include="Assets\Scenes\Math\VectorCrossProduct\User.cs" />
     <Compile Include="Assets\Scenes\Physics\ResistanceForce\addForceSimulator.cs" />
+    <Compile Include="Assets\Scenes\Math\Matrix\MatrixConversion.cs" />
+    <Compile Include="Assets\Scenes\Math\Matrix\PrintMatrix.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
