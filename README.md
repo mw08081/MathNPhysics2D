@@ -101,7 +101,7 @@ https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/Math/VectorCro
 
 행렬의 변환은 다음 사진을 참고해서 설명한다  
 ![변환행렬의 곱](https://user-images.githubusercontent.com/58582985/136191729-c1f8a3b3-7f1b-406d-b7f6-96f9f824e16f.png)  
-이동할때에는 T행렬을 기존 동차좌표계에 곱해주고, 신축할때에는 S행렬을 기존 동차좌표계에 곱해준다. 
+이동할때에는 T행렬을 기존 동차좌표계에 곱해주고, 신축할때에는 S행렬을 기존 동차좌표계에 곱해준다.  
 마지막으로 회전을 할때에는 각각의 축에 맞게 Θ값을 대입해서 곱해주면 된다  
 다음은 3차원 좌표에 점 a(1, 0, 0)가 있을때 이 점을 z축을 기준으로 90도 회전한다면 해당 점의 위치가 어떻게 바뀌는지에 대한 예시이다  
 ![z회전](https://user-images.githubusercontent.com/58582985/136193747-482deb8e-1979-4ff8-916e-a003f68595f7.png)
