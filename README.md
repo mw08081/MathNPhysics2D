@@ -59,7 +59,8 @@ https://ko.wikipedia.org/wiki/%EC%82%BC%EA%B0%81%ED%95%A8%EC%88%98_%ED%95%AD%EB%
 for (int i = 0; i < gosts.Length; i++)
 {
     Vector3 bVector = gosts[i].transform.position - transform.position;
-    if (((gosts[i].transform.position - transform.position).magnitude <= 5) && Vector3.Dot(transform.up, bVector.normalized) > Mathf.Cos(lightAngle * Mathf.Deg2Rad))
+    if (((gosts[i].transform.position - transform.position).magnitude <= 5) && 
+        Vector3.Dot(transform.up, bVector.normalized) > Mathf.Cos(lightAngle * Mathf.Deg2Rad))
         gosts[i].SetActive(true);
     else
         gosts[i].SetActive(false);
