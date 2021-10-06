@@ -75,7 +75,9 @@ for (float i = 90 - lightAngle; i < (90 + lightAngle); i++)
 ![drawDebug](https://user-images.githubusercontent.com/58582985/136148963-113c01aa-3134-4b81-835f-58dcc6439194.gif)  
 
 +++ 벡터의 내적 구현 코드  
-  
+https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/Math/VectorDotProduct  
++++ 벡터의 내적 구현 난항
+
 
 
 
