@@ -101,7 +101,7 @@ https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/Math/VectorCro
 
 행렬의 변환은 다음 사진을 참고해서 설명한다  
 ![변환행렬의 곱](https://user-images.githubusercontent.com/58582985/136191729-c1f8a3b3-7f1b-406d-b7f6-96f9f824e16f.png)  
-이동할때에는 T행렬을 기존 동차좌표계에 곱해주고, 신축할때에는 S행렬을 기존 동차좌표계에 곱해준다.  
+이동할때에는 T행렬을 기존 동차좌표계에 곱해주고, 신축할때에는 S행렬을 기존 동차좌표계에 곱해준다  
 마지막으로 회전을 할때에는 각각의 축에 맞게 Θ값을 대입해서 곱해주면 된다  
 다음은 3차원 좌표에 점 a(1, 0, 0)가 있을때 이 점을 z축을 기준으로 90도 회전한다면 해당 점의 위치가 어떻게 바뀌는지에 대한 예시이다  
 ![z회전](https://user-images.githubusercontent.com/58582985/136193747-482deb8e-1979-4ff8-916e-a003f68595f7.png)
@@ -166,7 +166,7 @@ B지점에서 Vx의 속도가 동일한 이유는 x방향으로의 가해지는 
 B지점에서 Vy, Sy를 구하는데 다음의 공식이 사용된다 ` v = v0 + at, s = v0 * t + at^2 / 2`  
 
 `C.x : Vx = v * cosΘ, Sx = v * cosΘ * 2t`  
-`C.y : Vy = v * sinΘ - 2gt = -v * sinΘ Sy = v * sinΘ * t - g2(t^2) / 2 = 0`  
+`C.y : Vy = v * sinΘ - 2gt = -v * sinΘ, Sy = v * sinΘ * t - g(t^2) / 2 = 0`  
 C지점에서의 Vy, Sy의 식을 정리하는데는 다음의 정의가 들어간다. B지점에서 `Vy = v * sinΘ - gt = 0` 이므로 `t = v * sinΘ / g`을 대입하면 식이 정리된다
 ![포물선운동](https://user-images.githubusercontent.com/58582985/135850506-d8ec3189-e7b8-443a-9aba-85e9f422fb7e.jpg)
 
