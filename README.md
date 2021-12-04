@@ -96,7 +96,7 @@ float betweenAngle = Mathf.Acos(Vector3.Dot(a, b)) * Mathf.RadToDeg;
 이때 반드시 Acos값에 Mathf.RadToDeg값을 곱해줘야지 라디안 각도를 얻을 수 있다  
 
 다음은 Acos에 대한 C# Docs이다  
-
+<img width="695" alt="스크린샷 2021-12-04 오후 4 17 49" src="https://user-images.githubusercontent.com/58582985/144701396-3b9d3f10-2c72-4916-a8b7-1e7c50ccda5c.png">  
 　  
 +++ 벡터의 내적 구현 코드  
 https://github.com/mw08081/MathNPhysics2D/tree/main/Assets/Scenes/Math/VectorDotProduct  
