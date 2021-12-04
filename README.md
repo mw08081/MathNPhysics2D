@@ -87,8 +87,8 @@ a = (1, 0), b = (0.5, -0.5) 의 내적을 계산하면 0.5이다
 
 이를 C#에서는 다음과 같이 표현할 수 있다.
 ```C#
-Vector3 a = ...
-Vector3 b = ...
+Vector3 a = new Vector3(1, 0, 0);
+Vector3 b = new Vector3(0.5f, 0, -0.5f);
 
 float betweenAngle = Mathf.Acos(Vector3.Dot(a, b)) * Mathf.RadToDeg;
 ```
