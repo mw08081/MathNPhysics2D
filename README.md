@@ -194,8 +194,8 @@ C지점에서의 Vy, Sy의 식을 정리하는데는 다음의 정의가 들어�
 ![포물선운동](https://user-images.githubusercontent.com/58582985/135850506-d8ec3189-e7b8-443a-9aba-85e9f422fb7e.jpg)
 
 이동거리와 최대높이에 대한 식을 `t = v * sinΘ / g`통해 정리하면 다음과 같다  
-`Sy = (v * sinΘ)^2 / 2g`  
-`Sx = v^2 * sin2Θ / g`  
+`B.Sy = (v * sinΘ)^2 / 2g`  
+`C.Sx = v^2 * sin2Θ / g`   (배각공식 : 2sinΘcosΘ = sin2Θ)  
   
 ![parabola](https://user-images.githubusercontent.com/58582985/135963584-1a75307c-44e7-499d-9743-cca827fc2568.gif)
 ![캡처](https://user-images.githubusercontent.com/58582985/135963582-d281b70b-48d0-4809-8da4-3e33e3cd3737.PNG)
