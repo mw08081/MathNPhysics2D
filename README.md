@@ -190,7 +190,7 @@ B지점에서 Vy, Sy를 구하는데 다음의 공식이 사용된다 ` v = v0 +
 
 `C.x : Vx = v * cosΘ, Sx = v * cosΘ * 2t`  
 `C.y : Vy = v * sinΘ - 2gt = -v * sinΘ, Sy = v * sinΘ * t - g(t^2) / 2 = 0`  
-C지점에서의 Vy, Sy의 식을 정리하는데는 다음의 정의가 들어간다. B지점에서 `Vy = v * sinΘ - gt = 0` 이므로 `t = v * sinΘ / g`을 대입하면 식이 정리된다
+C지점에서의 Vy, Sy의 식을 정리하는데는 다음의 정의가 들어간다. B지점에서 `Vy = v * sinΘ - gt = 0` 이므로 `t = v * sinΘ / g`을 대입하면 식이 정리된다  
 ![포물선운동](https://user-images.githubusercontent.com/58582985/135850506-d8ec3189-e7b8-443a-9aba-85e9f422fb7e.jpg)
 
 이동거리와 최대높이에 대한 식을 `t = v * sinΘ / g`통해 정리하면 다음과 같다  
